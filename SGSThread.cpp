@@ -96,7 +96,7 @@ void CSGSThread::run()
 
 	loadReflectors(DEXTRA_HOSTS_FILE_NAME, DP_DEXTRA);
 	loadReflectors(DCS_HOSTS_FILE_NAME, DP_DCS);
-	CDExtraProtocolHandlerPool dextraPool(DEXTRA_PORT, m_address);
+	CDExtraProtocolHandlerPool dextraPool(0, m_address);
 	CDCSProtocolHandlerPool dcsPool(DCS_PORT, m_address);
 
 	CG2Handler::setG2ProtocolHandler(m_g2Handler);

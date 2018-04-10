@@ -26,7 +26,6 @@ CDExtraProtocolHandlerPool::CDExtraProtocolHandlerPool(const unsigned int port, 
 m_basePort(port),
 m_address(addr)
 {
-	assert(port > 0U);
 	m_index = m_pool.end();
 	printf("DExtra UDP port base = %u\n", port);
 }
